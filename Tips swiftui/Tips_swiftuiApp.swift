@@ -12,6 +12,7 @@ struct Tips_swiftuiApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear(perform: UIApplication.shared.addTapGestureRecognizer)
         }
     }
 }
